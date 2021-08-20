@@ -28,6 +28,10 @@ class Graph:
             if graph_edge == edge:
                 del self.edge_list[i]
     
+    def count(self):
+        return len(self.node_list), len(self.edge_list)
+
+
     def __str__(self):
         return str({
             'nodes': self.node_list,
